@@ -13,16 +13,48 @@
 
 .header {}
 
-.logo {}
+.header:after{
+	content:"";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
 
-.navigation {}
+.logo {
+	float:left;
+}
 
-.sidebar {}
+.navigation {
+	float:right;
+}
+
+.sidebar {
+	float:left;
+	height:300px;
+	width:25%;
+}
 
 .main_content {}
 
-.sub_content {}
+.main_content:after{
+	content:"";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
 
-.sub_content_2 {}
+.sub_content {
+	float:left;
+	height:150px;
+	width:70%;
+}
+
+.sub_content_2 {
+	float:left;
+	height:150px;
+	width:70%;
+}
 
 .footer {}

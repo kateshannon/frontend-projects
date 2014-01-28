@@ -15,10 +15,9 @@
 }
 
 .sidebar {
-	float: left; /* to move the sidebar to the left-most side of its containing element, on a new line after the last non-floated element */
+	float: left; /of its containing element, on a new line after the last non-floated element */
 	width: 250px; /* 1024 - 250 = 774px remaining for the main content div. because we used box-sizing, this div will actually be 250px even with 20px of padding on each side. try removing the box-sizing property in style.css and see how that changes the calculated width of this div. */
-	height: 300px; /* here, the height property is for visual purposes only. you wouldn't normally add height if there was content. */
-}
+	height: 300px; 
 
 .main_content {
 	float: left; /* you could float right, too, but left is more consistent */

@@ -13,21 +13,52 @@
 
 .header {}
 /* hint! what do you have to add here? */
+.header:after{
+	content:"";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
 
-.logo {}
+.logo {
+	float:left;
+}
 
-.navigation {}
+.navigation {
+	float:right;
+}
 
-.sidebar {}
+.sidebar {
+	float:left;
+	width:200px;
+	height:300px;
+}
 
 .main_content {}
 /* hint! you have to contain the floated children elements. */
 
+.main_content:after{
+	content:"";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
+
 .sub_content {
 	/* hint! */
+	height:150px;
+	width:734px;
+	float:left;
 }
 .sub_content_2 {
 	/* hint! */
+	height:150px;
+	width:734px;
+	float:left;
 }
 
-.footer {}
+.footer {
+	clear:both;
+}

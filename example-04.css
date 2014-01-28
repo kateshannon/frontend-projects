@@ -11,22 +11,40 @@
 }
 
 
-.header {}
+.header {
+}
+.header:after{
+	content:"";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
 /* hint! you have to contain the floated children elements. */
 
 .logo {
+	float:left;
 	/* hint! */
+
 }
 
 .navigation {
 	/* hint! */
+	float:right;
 }
 
 .sidebar {
+	width: 250px;
+	height: 300px;
+	float:left;
 }
 
 .main_content {
+	height:300px;
+	width: 734px;
+	float:left;
 }
 
 .footer {
+	clear:both;
 }

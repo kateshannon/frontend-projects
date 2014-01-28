@@ -6,7 +6,7 @@
 /* Example 06 */
 
 .container {
-	width: 1024px; /* what happens to the widget boxes when you change this width? */
+	width: 900px; /* what happens to the widget boxes when you change this width? */
 	margin: 0 auto;
 }
 
@@ -14,8 +14,16 @@
 .main_content {}
 /* hint! what do you need to add here? */
 
+.main_content:after {
+	content:"";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
 .widget {
 	/* how do you make the widgets float next to each other? */
+	float:left;
 	/* what happens when you change float left to float right? why? */
 }
 
